@@ -1,0 +1,55 @@
+section {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+
+    form  {
+        display: flex;
+        flex-direction: column;
+        max-width: 25rem;
+        margin-bottom: 1rem;
+        width: 100%;
+    
+        div {
+            margin: .5rem 0;
+        }
+
+        button {
+            background-color: rgba(75,190,248, .8);
+            border: none;
+            border-radius: .6rem;
+            color: rgba(255,255,255, 1);
+            font-size: 1.6rem;
+            margin-top: 1rem;
+            padding: .7rem ;
+            outline: none;
+            transition: background .2s ease;
+
+            &:hover {
+                background-color: rgba(75,190,248, 1);
+                cursor: pointer;
+            }
+        }
+
+        .noMatch {
+            font-size: 1rem;
+            color: red;
+        }
+    }
+
+    p {
+        font-size: 1rem;
+        margin: .3rem;
+    }
+    
+    .error {
+        color: red
+    }
+    
+    .success {
+        color: green;
+    }    
+}
